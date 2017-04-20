@@ -387,6 +387,11 @@ public class WMethod{
      // Example use of the Utilities.runFSM() method
      // Utilities.runFSM(FSM, 1, "a a b a b", " ");
      
+     for(String test: tests) {
+    	 test = test.replace(""," ");
+    	 Utilities.runFSM(FSM, startState, test, " ");
+     }
+     
    }// End of main()
    
 }//End of class WMethod
