@@ -382,9 +382,15 @@ public class WMethod{
      Utilities.printAllTestCases(tests); // Print tests.
      
      //For each loop iterates through and fixes "" by changing to " "
-     for(String test: tests) {
-    	 test = test.replace(""," ");
-    	 Utilities.runFSM(FSM, startState, test, " ");
+     int index=0;
+     for(String test: tests){
+    	 System.out.println("@Test\npublic void testCase" + index + "() {");
+    	 index++;
+    	 if (Utilities.runFSM(FSM, startState, test.replace("", " ").trim(), " "))
+    		 System.out.println("\tassertTrue(bond.bondRegex(\""+test+"\"));");
+    	 else
+    		 System.out.println("\tassertFalse(bond.bondRegex(\""+test+"\"));");
+    	 System.out.println("}\n");
      }
      
    }// End of main()

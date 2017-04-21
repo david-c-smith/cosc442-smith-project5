@@ -1,0 +1,247 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class JamesBondTest {
+	JamesBond bond;
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void testCase0() {
+		assertFalse(bond.bondRegex("("));
+	}
+
+	@Test
+	public void testCase1() {
+		assertFalse(bond.bondRegex("(("));
+	}
+
+	@Test
+	public void testCase2() {
+		assertFalse(bond.bondRegex("(0"));
+	}
+
+	@Test
+	public void testCase3() {
+		assertFalse(bond.bondRegex("(07("));
+	}
+
+	@Test
+	public void testCase4() {
+		assertFalse(bond.bondRegex("(7("));
+	}
+
+	@Test
+	public void testCase5() {
+		assertFalse(bond.bondRegex("0"));
+	}
+
+	@Test
+	public void testCase6() {
+		assertFalse(bond.bondRegex("0("));
+	}
+
+	@Test
+	public void testCase7() {
+		assertFalse(bond.bondRegex("00"));
+	}
+
+	@Test
+	public void testCase8() {
+		assertFalse(bond.bondRegex("007("));
+	}
+
+	@Test
+	public void testCase9() {
+		assertFalse(bond.bondRegex("07("));
+	}
+
+	@Test
+	public void testCase10() {
+		assertFalse(bond.bondRegex("1("));
+	}
+
+	@Test
+	public void testCase11() {
+		assertFalse(bond.bondRegex("10"));
+	}
+
+	@Test
+	public void testCase12() {
+		assertFalse(bond.bondRegex("107("));
+	}
+
+	@Test
+	public void testCase13() {
+		assertFalse(bond.bondRegex("17("));
+	}
+
+	@Test
+	public void testCase14() {
+		assertFalse(bond.bondRegex("2("));
+	}
+
+	@Test
+	public void testCase15() {
+		assertFalse(bond.bondRegex("20"));
+	}
+
+	@Test
+	public void testCase16() {
+		assertFalse(bond.bondRegex("207("));
+	}
+
+	@Test
+	public void testCase17() {
+		assertFalse(bond.bondRegex("27("));
+	}
+
+	@Test
+	public void testCase18() {
+		assertFalse(bond.bondRegex("3("));
+	}
+
+	@Test
+	public void testCase19() {
+		assertFalse(bond.bondRegex("30"));
+	}
+
+	@Test
+	public void testCase20() {
+		assertFalse(bond.bondRegex("307("));
+	}
+
+	@Test
+	public void testCase21() {
+		assertFalse(bond.bondRegex("37("));
+	}
+
+	@Test
+	public void testCase22() {
+		assertFalse(bond.bondRegex("4("));
+	}
+
+	@Test
+	public void testCase23() {
+		assertFalse(bond.bondRegex("40"));
+	}
+
+	@Test
+	public void testCase24() {
+		assertFalse(bond.bondRegex("407("));
+	}
+
+	@Test
+	public void testCase25() {
+		assertFalse(bond.bondRegex("47("));
+	}
+
+	@Test
+	public void testCase26() {
+		assertFalse(bond.bondRegex("5("));
+	}
+
+	@Test
+	public void testCase27() {
+		assertFalse(bond.bondRegex("50"));
+	}
+
+	@Test
+	public void testCase28() {
+		assertFalse(bond.bondRegex("507("));
+	}
+
+	@Test
+	public void testCase29() {
+		assertFalse(bond.bondRegex("57("));
+	}
+
+	@Test
+	public void testCase30() {
+		assertFalse(bond.bondRegex("6("));
+	}
+
+	@Test
+	public void testCase31() {
+		assertFalse(bond.bondRegex("60"));
+	}
+
+	@Test
+	public void testCase32() {
+		assertFalse(bond.bondRegex("607("));
+	}
+
+	@Test
+	public void testCase33() {
+		assertFalse(bond.bondRegex("67("));
+	}
+
+	@Test
+	public void testCase34() {
+		assertFalse(bond.bondRegex("7("));
+	}
+
+	@Test
+	public void testCase35() {
+		assertFalse(bond.bondRegex("70"));
+	}
+
+	@Test
+	public void testCase36() {
+		assertFalse(bond.bondRegex("707("));
+	}
+
+	@Test
+	public void testCase37() {
+		assertFalse(bond.bondRegex("77("));
+	}
+
+	@Test
+	public void testCase38() {
+		assertFalse(bond.bondRegex("8("));
+	}
+
+	@Test
+	public void testCase39() {
+		assertFalse(bond.bondRegex("80"));
+	}
+
+	@Test
+	public void testCase40() {
+		assertFalse(bond.bondRegex("807("));
+	}
+
+	@Test
+	public void testCase41() {
+		assertFalse(bond.bondRegex("87("));
+	}
+
+	@Test
+	public void testCase42() {
+		assertFalse(bond.bondRegex("9("));
+	}
+
+	@Test
+	public void testCase43() {
+		assertFalse(bond.bondRegex("90"));
+	}
+
+	@Test
+	public void testCase44() {
+		assertFalse(bond.bondRegex("907("));
+	}
+
+	@Test
+	public void testCase45() {
+		assertFalse(bond.bondRegex("97("));
+	}
+}

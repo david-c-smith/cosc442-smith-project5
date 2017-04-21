@@ -48,3 +48,34 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY com.instantiations.eclipse 1 0 2017-04-20 09:36:33.517
 !MESSAGE StartupPlugin: could not add workbench property change listener (1) ... compatibility layer might not be installed.
+
+!ENTRY com.instantiations.eclipse 1 0 2017-04-20 19:21:10.315
+!MESSAGE cannot support aboutToShutdown event - 2
+
+!ENTRY org.pitest.pitclipse.core 1 0 2017-04-20 20:26:00.735
+!MESSAGE Classpath: [/Users/Dave/Desktop/cosc442-smith-project5/Project5/bin, /Users/Dave/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar, /Users/Dave/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar, /Users/Dave/.p2/pool/plugins/org.pitest.command-line-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.html-report-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.pitrunner_1.1.6.201607050705.jar, /Users/Dave/.p2/pool/plugins/org.pitest.guava-shade-osgi_18.0.0.jar]
+
+!ENTRY org.pitest.pitclipse.core 1 0 2017-04-20 20:30:09.298
+!MESSAGE Classpath: [/Users/Dave/Desktop/cosc442-smith-project5/Project5/bin, /Users/Dave/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar, /Users/Dave/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar, /Users/Dave/.p2/pool/plugins/org.pitest.command-line-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.html-report-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.pitrunner_1.1.6.201607050705.jar, /Users/Dave/.p2/pool/plugins/org.pitest.guava-shade-osgi_18.0.0.jar]
+
+!ENTRY org.pitest.pitclipse.core 1 0 2017-04-20 20:30:12.017
+!MESSAGE Classpath: [/Users/Dave/Desktop/cosc442-smith-project5/Project5/bin, /Users/Dave/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar, /Users/Dave/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar, /Users/Dave/.p2/pool/plugins/org.pitest.command-line-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.html-report-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.pitrunner_1.1.6.201607050705.jar, /Users/Dave/.p2/pool/plugins/org.pitest.guava-shade-osgi_18.0.0.jar]
+
+!ENTRY org.pitest.pitclipse.core 1 0 2017-04-20 20:30:41.249
+!MESSAGE Classpath: [/Users/Dave/Desktop/cosc442-smith-project5/Project5/bin, /Users/Dave/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar, /Users/Dave/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar, /Users/Dave/.p2/pool/plugins/org.pitest.command-line-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.html-report-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.pitrunner_1.1.6.201607050705.jar, /Users/Dave/.p2/pool/plugins/org.pitest.guava-shade-osgi_18.0.0.jar]
+
+!ENTRY org.pitest.pitclipse.core 1 0 2017-04-20 20:43:41.993
+!MESSAGE Classpath: [/Users/Dave/Desktop/cosc442-smith-project5/Project5/bin, /Users/Dave/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar, /Users/Dave/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar, /Users/Dave/.p2/pool/plugins/org.pitest.command-line-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.html-report-osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.osgi_1.1.9.jar, /Users/Dave/.p2/pool/plugins/org.pitest.pitrunner_1.1.6.201607050705.jar, /Users/Dave/.p2/pool/plugins/org.pitest.guava-shade-osgi_18.0.0.jar]
+
+!ENTRY com.instantiations.eclipse 1 0 2017-04-20 21:16:37.838
+!MESSAGE StartupPlugin: could not remove workbench property change listener (1) ... workbench might already be shut down.
+
+!ENTRY org.eclipse.core.jobs 4 2 2017-04-20 21:16:43.119
+!MESSAGE An internal error occurred during: "com.mountainminds.eclemma.internal.core.launching.AgentServer".
+!STACK 0
+java.lang.NullPointerException
+	at com.mountainminds.eclemma.internal.ui.UIPreferences.getPreferenceStore(UIPreferences.java:113)
+	at com.mountainminds.eclemma.internal.ui.UIPreferences.access$0(UIPreferences.java:112)
+	at com.mountainminds.eclemma.internal.ui.UIPreferences$1.getActivateNewSessions(UIPreferences.java:56)
+	at com.mountainminds.eclemma.internal.core.launching.AgentServer.run(AgentServer.java:123)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
